@@ -1,0 +1,225 @@
+/* ================================
+  Hero Section
+  ================================ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: #000001;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(9, 14, 30, 0.75);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.hero .section-title h1 {
+  font-size: 14px;
+  background-color: #111a37 !important;
+}
+
+.hero .section-title h2 {
+  font-size: 60px;
+  color: #fff;
+}
+
+.hero .section-title h2 span::before {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.hero .section-title p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.hero .section-title a {
+  font-size: 18px;
+}
+
+.hero .btn-outline-primary {
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: calc(100vh - 73.6px);
+  }
+  .hero .container {
+    margin-top: 2rem;
+  }
+  .hero .section-title h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .container {
+    margin-top: -73.6px;
+  }
+  .hero .section-title h2 {
+    font-size: 40px;
+  }
+  .hero .section-title p,
+  .hero .section-title a {
+    font-size: 18px;
+  }
+}
+
+/* ================================
+  Welcome Message Section
+  ================================ */
+
+.welcome-message {
+  padding-bottom: 3rem !important;
+}
+
+.welcome-message .img-bg {
+  height: 700px;
+  background: url("../img/home/welcome-img.webp") no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.welcome-message .card-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  margin-bottom: -6rem;
+}
+
+.welcome-message .card {
+  text-align: center;
+  background-color: var(--nsj-white-bg-color);
+}
+
+#app.dark .welcome-message .card {
+  background-color: var(--nsj-light-bg-color);
+}
+
+@media (max-width: 768px) {
+  .welcome-message .img-bg {
+    height: 300px;
+  }
+  .welcome-message .card-wrapper {
+    position: static;
+    right: 0;
+    bottom: unset;
+    left: 0;
+    padding: 0;
+  }
+  .welcome-message .card {
+    margin-top: -1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-message {
+    padding-bottom: 6rem !important;
+  }
+}
+
+/* ================================
+  Services Overview Section
+  ================================ */
+
+.services-overview .card {
+  background-color: var(--nsj-light-bg-color);
+}
+
+.services-overview .card:hover::before {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.services-overview .card a {
+  color: #7c818e;
+  position: relative;
+}
+
+.services-overview .card a:hover {
+  color: var(--nsj-black-bg-color);
+}
+
+.services-overview .card a::before {
+  content: "";
+  background: rgb(255, 108, 30) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 108, 30, 1) 0%,
+    rgba(216, 68, 4, 1) 100%
+  ) !important;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: ease 0.3s;
+}
+
+.services-overview .card a:hover::before {
+  width: 0;
+}
+
+.services-overview .card a i {
+  transition: ease 0.3s;
+}
+
+.services-overview .card a:hover i {
+  transform: translateX(0.5rem);
+}
+
+/* ================================
+  Featured Testimonials Section
+  ================================ */
+
+.featured-testimonials .card {
+  text-align: center;
+  background-color: var(--nsj-light-bg-color);
+}
+
+.featured-testimonials .owl-carousel .owl-item {
+  display: block;
+  height: 100%;
+}
+
+/* ================================
+  Request Quote Section
+  ================================ */
+
+.request-quote .card {
+  background-color: var(--nsj-light-bg-color);
+}
+
+.request-quote .card .form-control {
+  background-color: var(--nsj-white-bg-color) !important;
+  border-color: var(--nsj-white-bg-color) !important;
+}
+
+.request-quote .card .form-control:active,
+.request-quote .card .form-control:focus {
+  border-color: #ff6c1e !important;
+}
