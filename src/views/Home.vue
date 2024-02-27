@@ -2,10 +2,10 @@
   <div class="home">
     <!-- Hero Section -->
     <section class="hero">
-      <!-- <image loop muted autoplay preload="auto">
-        <source src="@/assets/img/hero-bg.png" />
+      <video loop muted autoplay preload="auto">
+        <source src="@/assets/img/hero-bg.mp4" />
         Your browser does not support the video tag.
-      </image> -->
+      </video>
 
       <div class="container">
         <div class="section-title text-center">

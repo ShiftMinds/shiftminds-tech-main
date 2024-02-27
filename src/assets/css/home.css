@@ -101,11 +101,6 @@
   background-blend-mode: multiply;
 }
 
-.hero .img-bg-globe {
-  background: url("../img/hero-bg.png") no-repeat center;
-  display: flex;
-}
-
 .welcome-message .card-wrapper {
   position: absolute;
   right: 0;
