@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <video loop muted autoplay preload="auto">
-        <source src="@/assets/vid/hero-bg.mp4" />
+        <source src="@/assets/img/hero-bg.mp4" />
         Your browser does not support the video tag.
       </video>
       <div class="container">
