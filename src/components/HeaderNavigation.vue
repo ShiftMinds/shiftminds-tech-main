@@ -225,7 +225,12 @@
             >About</router-link
           >
           <a href="#" class="btn btn-default btn-lg">Services</a>
-          <a class="nav-link" href="#" @click="scrollToRequestQuote">Contact</a>
+          <a
+            class="btn btn-default btn-lg"
+            href="#"
+            @click="scrollToRequestQuote"
+            >Contact</a
+          >
         </div>
       </div>
     </div>
